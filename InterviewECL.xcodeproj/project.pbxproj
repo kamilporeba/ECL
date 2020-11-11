@@ -15,7 +15,6 @@
 		8E497B5D255C238E00A79AE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E497B5B255C238E00A79AE9 /* LaunchScreen.storyboard */; };
 		8E497B68255C238E00A79AE9 /* InterviewECLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497B67255C238E00A79AE9 /* InterviewECLTests.swift */; };
 		8E497B80255C239F00A79AE9 /* ECLModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E497B77255C239F00A79AE9 /* ECLModel.framework */; };
-		8E497B87255C239F00A79AE9 /* ECLModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497B86255C239F00A79AE9 /* ECLModelTests.swift */; };
 		8E497B89255C239F00A79AE9 /* ECLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E497B79255C239F00A79AE9 /* ECLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E497B8C255C239F00A79AE9 /* ECLModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E497B77255C239F00A79AE9 /* ECLModel.framework */; };
 		8E497B8D255C239F00A79AE9 /* ECLModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E497B77255C239F00A79AE9 /* ECLModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -30,6 +29,24 @@
 		8E497BA9255C292200A79AE9 /* Visitors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BA8255C292200A79AE9 /* Visitors.swift */; };
 		8E497BAB255C298A00A79AE9 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BAA255C298A00A79AE9 /* Rate.swift */; };
 		8E497BAD255C2A7700A79AE9 /* RateSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BAC255C2A7700A79AE9 /* RateSerializationTests.swift */; };
+		8E497BB0255C2C0400A79AE9 /* CityListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BAF255C2C0400A79AE9 /* CityListModel.swift */; };
+		8E497BB5255C444F00A79AE9 /* RestDataTaskCreating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BB4255C444F00A79AE9 /* RestDataTaskCreating.swift */; };
+		8E497BB7255C4C1200A79AE9 /* CityListTaskCreating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BB6255C4C1200A79AE9 /* CityListTaskCreating.swift */; };
+		8E497BB9255C4E8600A79AE9 /* URL+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BB8255C4E8600A79AE9 /* URL+API.swift */; };
+		8E497BBC255C4F3C00A79AE9 /* URL+APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BBB255C4F3C00A79AE9 /* URL+APITests.swift */; };
+		8E497BC0255C5A1800A79AE9 /* URLSession+ECLTaskCreating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BBF255C5A1800A79AE9 /* URLSession+ECLTaskCreating.swift */; };
+		8E497BC3255C5CA400A79AE9 /* ECLDataTaskCreatingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BC2255C5CA400A79AE9 /* ECLDataTaskCreatingMock.swift */; };
+		8E497BC5255C5EC600A79AE9 /* TaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BC4255C5EC600A79AE9 /* TaskMock.swift */; };
+		8E497BC8255C605600A79AE9 /* VisitorsTaskCreating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BC7255C605600A79AE9 /* VisitorsTaskCreating.swift */; };
+		8E497BCA255C60C300A79AE9 /* RateDataTaskCreating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BC9255C60C300A79AE9 /* RateDataTaskCreating.swift */; };
+		8E497BCD255C62DE00A79AE9 /* CityListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BCC255C62DE00A79AE9 /* CityListModelTests.swift */; };
+		8E497BCF255C637200A79AE9 /* CityListModelListenerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BCE255C637200A79AE9 /* CityListModelListenerMock.swift */; };
+		8E497BD1255C7D1500A79AE9 /* AtomicProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BD0255C7D1500A79AE9 /* AtomicProperty.swift */; };
+		8E497BD3255C7F8B00A79AE9 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BD2255C7F8B00A79AE9 /* ModelError.swift */; };
+		8E497BD5255C82DA00A79AE9 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BD4255C82DA00A79AE9 /* ImageFetcher.swift */; };
+		8E497BD9255C8C1800A79AE9 /* Visitors+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BD8255C8C1800A79AE9 /* Visitors+Sample.swift */; };
+		8E497BDB255C8C3C00A79AE9 /* Rate+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BDA255C8C3C00A79AE9 /* Rate+Sample.swift */; };
+		8E497BDD255C8DA900A79AE9 /* XCTestCase+expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BDC255C8DA900A79AE9 /* XCTestCase+expectation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +103,6 @@
 		8E497B79255C239F00A79AE9 /* ECLModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECLModel.h; sourceTree = "<group>"; };
 		8E497B7A255C239F00A79AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E497B7F255C239F00A79AE9 /* ECLModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECLModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E497B86255C239F00A79AE9 /* ECLModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECLModelTests.swift; sourceTree = "<group>"; };
 		8E497B88255C239F00A79AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E497B96255C25C400A79AE9 /* CityListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListDTO.swift; sourceTree = "<group>"; };
 		8E497B99255C25FD00A79AE9 /* CityListSerializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListSerializationTests.swift; sourceTree = "<group>"; };
@@ -99,6 +115,24 @@
 		8E497BA8255C292200A79AE9 /* Visitors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitors.swift; sourceTree = "<group>"; };
 		8E497BAA255C298A00A79AE9 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		8E497BAC255C2A7700A79AE9 /* RateSerializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateSerializationTests.swift; sourceTree = "<group>"; };
+		8E497BAF255C2C0400A79AE9 /* CityListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListModel.swift; sourceTree = "<group>"; };
+		8E497BB4255C444F00A79AE9 /* RestDataTaskCreating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestDataTaskCreating.swift; sourceTree = "<group>"; };
+		8E497BB6255C4C1200A79AE9 /* CityListTaskCreating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListTaskCreating.swift; sourceTree = "<group>"; };
+		8E497BB8255C4E8600A79AE9 /* URL+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+API.swift"; sourceTree = "<group>"; };
+		8E497BBB255C4F3C00A79AE9 /* URL+APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+APITests.swift"; sourceTree = "<group>"; };
+		8E497BBF255C5A1800A79AE9 /* URLSession+ECLTaskCreating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+ECLTaskCreating.swift"; sourceTree = "<group>"; };
+		8E497BC2255C5CA400A79AE9 /* ECLDataTaskCreatingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECLDataTaskCreatingMock.swift; sourceTree = "<group>"; };
+		8E497BC4255C5EC600A79AE9 /* TaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMock.swift; sourceTree = "<group>"; };
+		8E497BC7255C605600A79AE9 /* VisitorsTaskCreating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorsTaskCreating.swift; sourceTree = "<group>"; };
+		8E497BC9255C60C300A79AE9 /* RateDataTaskCreating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateDataTaskCreating.swift; sourceTree = "<group>"; };
+		8E497BCC255C62DE00A79AE9 /* CityListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListModelTests.swift; sourceTree = "<group>"; };
+		8E497BCE255C637200A79AE9 /* CityListModelListenerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListModelListenerMock.swift; sourceTree = "<group>"; };
+		8E497BD0255C7D1500A79AE9 /* AtomicProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicProperty.swift; sourceTree = "<group>"; };
+		8E497BD2255C7F8B00A79AE9 /* ModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
+		8E497BD4255C82DA00A79AE9 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		8E497BD8255C8C1800A79AE9 /* Visitors+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Visitors+Sample.swift"; sourceTree = "<group>"; };
+		8E497BDA255C8C3C00A79AE9 /* Rate+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rate+Sample.swift"; sourceTree = "<group>"; };
+		8E497BDC255C8DA900A79AE9 /* XCTestCase+expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+expectation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,9 +217,13 @@
 		8E497B78255C239F00A79AE9 /* ECLModel */ = {
 			isa = PBXGroup;
 			children = (
+				8E497BB1255C384700A79AE9 /* Networking */,
+				8E497BAE255C2BD800A79AE9 /* Models */,
 				8E497B95255C25B300A79AE9 /* DTO */,
 				8E497B79255C239F00A79AE9 /* ECLModel.h */,
 				8E497B7A255C239F00A79AE9 /* Info.plist */,
+				8E497BD0255C7D1500A79AE9 /* AtomicProperty.swift */,
+				8E497BD4255C82DA00A79AE9 /* ImageFetcher.swift */,
 			);
 			path = ECLModel;
 			sourceTree = "<group>";
@@ -193,10 +231,14 @@
 		8E497B85255C239F00A79AE9 /* ECLModelTests */ = {
 			isa = PBXGroup;
 			children = (
+				8E497BDE255C991500A79AE9 /* ViewModels */,
+				8E497BCB255C62CE00A79AE9 /* Model Tests */,
+				8E497BC1255C5C9000A79AE9 /* Mocks */,
+				8E497BBA255C4F2400A79AE9 /* Networking */,
 				8E497B9B255C260E00A79AE9 /* Samples */,
 				8E497B98255C25E400A79AE9 /* DTO+tests */,
-				8E497B86255C239F00A79AE9 /* ECLModelTests.swift */,
 				8E497B88255C239F00A79AE9 /* Info.plist */,
+				8E497BDC255C8DA900A79AE9 /* XCTestCase+expectation.swift */,
 			);
 			path = ECLModelTests;
 			sourceTree = "<group>";
@@ -229,8 +271,73 @@
 				8E497B9E255C262800A79AE9 /* Visitors.json */,
 				8E497BA4255C264300A79AE9 /* CityListDTO+Sample.swift */,
 				8E497B9D255C262800A79AE9 /* SampleJSON.swift */,
+				8E497BD8255C8C1800A79AE9 /* Visitors+Sample.swift */,
+				8E497BDA255C8C3C00A79AE9 /* Rate+Sample.swift */,
 			);
 			path = Samples;
+			sourceTree = "<group>";
+		};
+		8E497BAE255C2BD800A79AE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E497BAF255C2C0400A79AE9 /* CityListModel.swift */,
+				8E497BD2255C7F8B00A79AE9 /* ModelError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E497BB1255C384700A79AE9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8E497BC6255C603F00A79AE9 /* Methods */,
+				8E497BB4255C444F00A79AE9 /* RestDataTaskCreating.swift */,
+				8E497BB8255C4E8600A79AE9 /* URL+API.swift */,
+				8E497BBF255C5A1800A79AE9 /* URLSession+ECLTaskCreating.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8E497BBA255C4F2400A79AE9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8E497BBB255C4F3C00A79AE9 /* URL+APITests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8E497BC1255C5C9000A79AE9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8E497BC2255C5CA400A79AE9 /* ECLDataTaskCreatingMock.swift */,
+				8E497BC4255C5EC600A79AE9 /* TaskMock.swift */,
+				8E497BCE255C637200A79AE9 /* CityListModelListenerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8E497BC6255C603F00A79AE9 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				8E497BB6255C4C1200A79AE9 /* CityListTaskCreating.swift */,
+				8E497BC7255C605600A79AE9 /* VisitorsTaskCreating.swift */,
+				8E497BC9255C60C300A79AE9 /* RateDataTaskCreating.swift */,
+			);
+			path = Methods;
+			sourceTree = "<group>";
+		};
+		8E497BCB255C62CE00A79AE9 /* Model Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8E497BCC255C62DE00A79AE9 /* CityListModelTests.swift */,
+			);
+			path = "Model Tests";
+			sourceTree = "<group>";
+		};
+		8E497BDE255C991500A79AE9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,9 +534,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E497BB0255C2C0400A79AE9 /* CityListModel.swift in Sources */,
 				8E497BAB255C298A00A79AE9 /* Rate.swift in Sources */,
+				8E497BD3255C7F8B00A79AE9 /* ModelError.swift in Sources */,
+				8E497BC0255C5A1800A79AE9 /* URLSession+ECLTaskCreating.swift in Sources */,
+				8E497BC8255C605600A79AE9 /* VisitorsTaskCreating.swift in Sources */,
+				8E497BB5255C444F00A79AE9 /* RestDataTaskCreating.swift in Sources */,
 				8E497BA9255C292200A79AE9 /* Visitors.swift in Sources */,
+				8E497BD5255C82DA00A79AE9 /* ImageFetcher.swift in Sources */,
+				8E497BB7255C4C1200A79AE9 /* CityListTaskCreating.swift in Sources */,
+				8E497BD1255C7D1500A79AE9 /* AtomicProperty.swift in Sources */,
+				8E497BCA255C60C300A79AE9 /* RateDataTaskCreating.swift in Sources */,
 				8E497B97255C25C400A79AE9 /* CityListDTO.swift in Sources */,
+				8E497BB9255C4E8600A79AE9 /* URL+API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,12 +554,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E497BC3255C5CA400A79AE9 /* ECLDataTaskCreatingMock.swift in Sources */,
+				8E497BDB255C8C3C00A79AE9 /* Rate+Sample.swift in Sources */,
+				8E497BD9255C8C1800A79AE9 /* Visitors+Sample.swift in Sources */,
+				8E497BCD255C62DE00A79AE9 /* CityListModelTests.swift in Sources */,
+				8E497BCF255C637200A79AE9 /* CityListModelListenerMock.swift in Sources */,
 				8E497BA5255C264300A79AE9 /* CityListDTO+Sample.swift in Sources */,
+				8E497BDD255C8DA900A79AE9 /* XCTestCase+expectation.swift in Sources */,
 				8E497B9A255C25FD00A79AE9 /* CityListSerializationTests.swift in Sources */,
 				8E497BA1255C262800A79AE9 /* SampleJSON.swift in Sources */,
-				8E497B87255C239F00A79AE9 /* ECLModelTests.swift in Sources */,
+				8E497BBC255C4F3C00A79AE9 /* URL+APITests.swift in Sources */,
 				8E497BAD255C2A7700A79AE9 /* RateSerializationTests.swift in Sources */,
 				8E497BA7255C290300A79AE9 /* VisitorsSerializationTests.swift in Sources */,
+				8E497BC5255C5EC600A79AE9 /* TaskMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

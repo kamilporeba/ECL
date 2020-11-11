@@ -15,6 +15,5 @@ class RateSerializationTests: XCTestCase {
     
     func test_shouldSerializeRate() {
         XCTAssertEqual(response?.rating, 4.67)
-        
     }
 }
