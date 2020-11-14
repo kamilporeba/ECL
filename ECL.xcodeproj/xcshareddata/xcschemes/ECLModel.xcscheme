@@ -17,7 +17,7 @@
                BlueprintIdentifier = "8E497B76255C239F00A79AE9"
                BuildableName = "ECLModel.framework"
                BlueprintName = "ECLModel"
-               ReferencedContainer = "container:InterviewECL.xcodeproj">
+               ReferencedContainer = "container:ECL.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "8E497B7E255C239F00A79AE9"
                BuildableName = "ECLModelTests.xctest"
                BlueprintName = "ECLModelTests"
-               ReferencedContainer = "container:InterviewECL.xcodeproj">
+               ReferencedContainer = "container:ECL.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -63,7 +63,7 @@
             BlueprintIdentifier = "8E497B76255C239F00A79AE9"
             BuildableName = "ECLModel.framework"
             BlueprintName = "ECLModel"
-            ReferencedContainer = "container:InterviewECL.xcodeproj">
+            ReferencedContainer = "container:ECL.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

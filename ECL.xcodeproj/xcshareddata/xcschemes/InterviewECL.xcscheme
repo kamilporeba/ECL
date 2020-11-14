@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8E497B4C255C238D00A79AE9"
-               BuildableName = "InterviewECL.app"
-               BlueprintName = "InterviewECL"
-               ReferencedContainer = "container:InterviewECL.xcodeproj">
+               BuildableName = "ECL.app"
+               BlueprintName = "ECL"
+               ReferencedContainer = "container:ECL.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8E497B62255C238E00A79AE9"
-               BuildableName = "InterviewECLTests.xctest"
-               BlueprintName = "InterviewECLTests"
-               ReferencedContainer = "container:InterviewECL.xcodeproj">
+               BuildableName = "ECLTests.xctest"
+               BlueprintName = "ECLTests"
+               ReferencedContainer = "container:ECL.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "8E497B7E255C239F00A79AE9"
                BuildableName = "ECLModelTests.xctest"
                BlueprintName = "ECLModelTests"
-               ReferencedContainer = "container:InterviewECL.xcodeproj">
+               ReferencedContainer = "container:ECL.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8E497B4C255C238D00A79AE9"
-            BuildableName = "InterviewECL.app"
-            BlueprintName = "InterviewECL"
-            ReferencedContainer = "container:InterviewECL.xcodeproj">
+            BuildableName = "ECL.app"
+            BlueprintName = "ECL"
+            ReferencedContainer = "container:ECL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8E497B4C255C238D00A79AE9"
-            BuildableName = "InterviewECL.app"
-            BlueprintName = "InterviewECL"
-            ReferencedContainer = "container:InterviewECL.xcodeproj">
+            BuildableName = "ECL.app"
+            BlueprintName = "ECL"
+            ReferencedContainer = "container:ECL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

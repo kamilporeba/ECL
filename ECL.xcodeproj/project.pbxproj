@@ -104,13 +104,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8E497B4D255C238D00A79AE9 /* InterviewECL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewECL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E497B4D255C238D00A79AE9 /* ECL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E497B50255C238D00A79AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E497B52255C238D00A79AE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8E497B59255C238E00A79AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E497B5C255C238E00A79AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E497B5E255C238E00A79AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E497B63255C238E00A79AE9 /* InterviewECLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewECLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E497B63255C238E00A79AE9 /* ECLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E497B67255C238E00A79AE9 /* InterviewECLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewECLTests.swift; sourceTree = "<group>"; };
 		8E497B69255C238E00A79AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E497B77255C239F00A79AE9 /* ECLModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECLModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,7 +204,7 @@
 		8E497B44255C238D00A79AE9 = {
 			isa = PBXGroup;
 			children = (
-				8E497B4F255C238D00A79AE9 /* InterviewECL */,
+				8E497B4F255C238D00A79AE9 /* ECL */,
 				8E497B66255C238E00A79AE9 /* InterviewECLTests */,
 				8E497B78255C239F00A79AE9 /* ECLModel */,
 				8E497B85255C239F00A79AE9 /* ECLModelTests */,
@@ -215,15 +215,15 @@
 		8E497B4E255C238D00A79AE9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E497B4D255C238D00A79AE9 /* InterviewECL.app */,
-				8E497B63255C238E00A79AE9 /* InterviewECLTests.xctest */,
+				8E497B4D255C238D00A79AE9 /* ECL.app */,
+				8E497B63255C238E00A79AE9 /* ECLTests.xctest */,
 				8E497B77255C239F00A79AE9 /* ECLModel.framework */,
 				8E497B7F255C239F00A79AE9 /* ECLModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8E497B4F255C238D00A79AE9 /* InterviewECL */ = {
+		8E497B4F255C238D00A79AE9 /* ECL */ = {
 			isa = PBXGroup;
 			children = (
 				8E845C202560386B008BBE86 /* City details */,
@@ -237,7 +237,7 @@
 				8E845C23256047E1008BBE86 /* UIImage+Base64Init.swift */,
 				8E845C2525604FF7008BBE86 /* VisitorsTableViewController.swift */,
 			);
-			path = InterviewECL;
+			path = ECL;
 			sourceTree = "<group>";
 		};
 		8E497B66255C238E00A79AE9 /* InterviewECLTests */ = {
@@ -426,9 +426,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8E497B4C255C238D00A79AE9 /* InterviewECL */ = {
+		8E497B4C255C238D00A79AE9 /* ECL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E497B6C255C238E00A79AE9 /* Build configuration list for PBXNativeTarget "InterviewECL" */;
+			buildConfigurationList = 8E497B6C255C238E00A79AE9 /* Build configuration list for PBXNativeTarget "ECL" */;
 			buildPhases = (
 				8E497B49255C238D00A79AE9 /* Sources */,
 				8E497B4A255C238D00A79AE9 /* Frameworks */,
@@ -440,14 +440,14 @@
 			dependencies = (
 				8E497B8B255C239F00A79AE9 /* PBXTargetDependency */,
 			);
-			name = InterviewECL;
+			name = ECL;
 			productName = InterviewECL;
-			productReference = 8E497B4D255C238D00A79AE9 /* InterviewECL.app */;
+			productReference = 8E497B4D255C238D00A79AE9 /* ECL.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8E497B62255C238E00A79AE9 /* InterviewECLTests */ = {
+		8E497B62255C238E00A79AE9 /* ECLTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E497B6F255C238E00A79AE9 /* Build configuration list for PBXNativeTarget "InterviewECLTests" */;
+			buildConfigurationList = 8E497B6F255C238E00A79AE9 /* Build configuration list for PBXNativeTarget "ECLTests" */;
 			buildPhases = (
 				8E497B5F255C238E00A79AE9 /* Sources */,
 				8E497B60255C238E00A79AE9 /* Frameworks */,
@@ -458,9 +458,9 @@
 			dependencies = (
 				8E497B65255C238E00A79AE9 /* PBXTargetDependency */,
 			);
-			name = InterviewECLTests;
+			name = ECLTests;
 			productName = InterviewECLTests;
-			productReference = 8E497B63255C238E00A79AE9 /* InterviewECLTests.xctest */;
+			productReference = 8E497B63255C238E00A79AE9 /* ECLTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		8E497B76255C239F00A79AE9 /* ECLModel */ = {
@@ -525,7 +525,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8E497B48255C238D00A79AE9 /* Build configuration list for PBXProject "InterviewECL" */;
+			buildConfigurationList = 8E497B48255C238D00A79AE9 /* Build configuration list for PBXProject "ECL" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -538,8 +538,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E497B4C255C238D00A79AE9 /* InterviewECL */,
-				8E497B62255C238E00A79AE9 /* InterviewECLTests */,
+				8E497B4C255C238D00A79AE9 /* ECL */,
+				8E497B62255C238E00A79AE9 /* ECLTests */,
 				8E497B76255C239F00A79AE9 /* ECLModel */,
 				8E497B7E255C239F00A79AE9 /* ECLModelTests */,
 			);
@@ -663,7 +663,7 @@
 /* Begin PBXTargetDependency section */
 		8E497B65255C238E00A79AE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8E497B4C255C238D00A79AE9 /* InterviewECL */;
+			target = 8E497B4C255C238D00A79AE9 /* ECL */;
 			targetProxy = 8E497B64255C238E00A79AE9 /* PBXContainerItemProxy */;
 		};
 		8E497B82255C239F00A79AE9 /* PBXTargetDependency */ = {
@@ -811,7 +811,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XY8ZXPE8XE;
-				INFOPLIST_FILE = InterviewECL/Info.plist;
+				INFOPLIST_FILE = ECL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -830,7 +830,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XY8ZXPE8XE;
-				INFOPLIST_FILE = InterviewECL/Info.plist;
+				INFOPLIST_FILE = ECL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -860,7 +860,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterviewECL.app/InterviewECL";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECL.app/ECL";
 			};
 			name = Debug;
 		};
@@ -882,7 +882,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterviewECL.app/InterviewECL";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECL.app/ECL";
 			};
 			name = Release;
 		};
@@ -986,7 +986,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E497B48255C238D00A79AE9 /* Build configuration list for PBXProject "InterviewECL" */ = {
+		8E497B48255C238D00A79AE9 /* Build configuration list for PBXProject "ECL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E497B6A255C238E00A79AE9 /* Debug */,
@@ -995,7 +995,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E497B6C255C238E00A79AE9 /* Build configuration list for PBXNativeTarget "InterviewECL" */ = {
+		8E497B6C255C238E00A79AE9 /* Build configuration list for PBXNativeTarget "ECL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E497B6D255C238E00A79AE9 /* Debug */,
@@ -1004,7 +1004,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E497B6F255C238E00A79AE9 /* Build configuration list for PBXNativeTarget "InterviewECLTests" */ = {
+		8E497B6F255C238E00A79AE9 /* Build configuration list for PBXNativeTarget "ECLTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E497B70255C238E00A79AE9 /* Debug */,
