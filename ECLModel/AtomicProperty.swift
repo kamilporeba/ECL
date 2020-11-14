@@ -1,13 +1,13 @@
 @propertyWrapper
-struct Atomic<Value> {
+public struct Atomic<Value> {
     private let queue = DispatchQueue(label: "com.poreba.kamil.atomicQueue")
     private var value: Value
 
-    init(wrappedValue: Value) {
+    public init(wrappedValue: Value) {
         self.value = wrappedValue
     }
     
-    var wrappedValue: Value {
+    public var wrappedValue: Value {
         get {
             return queue.sync { value }
         }

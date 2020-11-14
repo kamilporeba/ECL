@@ -7,7 +7,7 @@ public protocol CityListViewModelDelegate: AnyObject {
 public class CityListViewModel  {
     public weak var delegate: CityListViewModelDelegate?
     let model: CityListModel!
-    var cityCell: [CityCellViewModel] = [CityCellViewModel]()
+    public var cityCell: [CityCellViewModel] = [CityCellViewModel]()
     
     init(with model: CityListModel) {
         self.model = model
@@ -26,14 +26,6 @@ public class CityListViewModel  {
     public func fetchImage(of cityId: Int) {
         model.getImage(of: cityId)
     }
-    
-    public func addToFavorite(of cityID: Int) {
-        model.addToFavorite(cityId: cityID)
-    }
-    
-    public func removeFromFavorite(cityId: Int) {
-        model.removeFromFavorite(cityId: cityId)
-    }
 }
 
 extension CityListViewModel: CityListListener {
@@ -46,6 +38,7 @@ extension CityListViewModel: CityListListener {
         if let cellModel = cityCell.first(where: {$0.id == cityId}) {
             cellModel.imageBase64 = base64Image
         }
+        delegate?.didFetchImage(for: cityId)
     }
     
     func didErrorOccure(error: ModelError) {

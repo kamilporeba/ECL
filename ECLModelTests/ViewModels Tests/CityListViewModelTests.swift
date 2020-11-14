@@ -87,33 +87,6 @@ class CityListViewModelTests: XCTestCase {
         waitForExpectations()
     }
     
-    func testShouldAddTofavorite_WhenAdded() {
-        let exp = expectation()
-        dataCreatingMock.mock_cityListDataTaskCompletion = { completion in
-            completion(.success(self.mockCityList))
-            self.sut.addToFavorite(of: 2)
-            XCTAssertEqual(self.sut.favorites.map{$0.id}, [2])
-            exp.fulfill()
-            return TaskMock()
-        }
-        sut.fetchList()
-        waitForExpectations()
-    }
-    
-    func testShouldRemoveTofavorite_WhenRemove() {
-        mockPersisting.setFavorite(favArray: [1,2,3])
-        let exp = expectation()
-        dataCreatingMock.mock_cityListDataTaskCompletion = { completion in
-            completion(.success(self.mockCityList))
-            self.sut.removeFromFavorite(cityId: 3)
-            XCTAssertEqual(self.sut.favorites.map{$0.id}, [1,2])
-            exp.fulfill()
-            return TaskMock()
-        }
-        sut.fetchList()
-        waitForExpectations()
-    }
-    
 }
 
 class CityListViewModelMockDelegate: CityListViewModelDelegate {

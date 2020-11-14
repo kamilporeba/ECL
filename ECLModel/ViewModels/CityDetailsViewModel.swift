@@ -3,8 +3,8 @@ public protocol CityDetailsViewModelDelegate: AnyObject {
     func didFetchDetails(visitors: [String], rate: Float)
 }
 
-class CityDetailsViewModel {
-    weak var delegate: CityDetailsViewModelDelegate?
+public class CityDetailsViewModel {
+    public weak var delegate: CityDetailsViewModelDelegate?
     let model: CityListModel
     
     var visitors: [String] = [String]()
@@ -17,10 +17,22 @@ class CityDetailsViewModel {
         self.cityId = cityId
         model.addListener(listener: self)
     }
+
+    public var isFavorite: Bool {
+        return model.favorites.contains(cityId)
+    }
     
-    func fetchAllDetails() {
+    public func fetchAllDetails() {
         model.fetchDetails(of: cityId)
     }
+    
+    public func addToFavorite() {
+         model.addToFavorite(cityId: cityId)
+     }
+     
+     public func removeFromFavorite() {
+         model.removeFromFavorite(cityId: cityId)
+     }
 }
 
 extension CityDetailsViewModel: CityListListener {

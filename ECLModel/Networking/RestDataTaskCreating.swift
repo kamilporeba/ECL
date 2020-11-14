@@ -23,7 +23,7 @@ extension RestDataTaskCreating {
                 }
                 return
             }
-            if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode >= 200 {
+            if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode > 200 {
                 DispatchQueue.main.async {
                     completionHandler(.apiError(httpResponse.statusCode))
                 }
@@ -32,14 +32,21 @@ extension RestDataTaskCreating {
             if let data = responseData {
                 do {
                     let mappedObject = try JSONDecoder().decode(T.self, from: data)
-                    completionHandler(.success(mappedObject))
+                    DispatchQueue.main.async {
+                        completionHandler(.success(mappedObject))
+                    }
                 } catch {
-                    completionHandler(.serializationError(error))
+                    DispatchQueue.main.async {
+                        completionHandler(.serializationError(error))
+                    }
                 }
                 return
             }
-            completionHandler(.unknownError)
+            DispatchQueue.main.async {
+                completionHandler(.unknownError)
+            }
+            
         }
-
+        
     }
 }

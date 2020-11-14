@@ -14,10 +14,14 @@ class ImageFetcher: ImageFetchable {
                     if data != nil {
                         let base64Image = data!.base64EncodedString()
                         self?.cityImageCache.setObject(NSString(string: base64Image), forKey: NSString(string: urlString))
-                        completion(base64Image, nil)
+                        DispatchQueue.main.async {
+                            completion(base64Image, nil)
+                        }
                     }
-                    completion(nil,error)
-                }
+                    DispatchQueue.main.async {
+                        completion(nil,error)
+                    }
+                }.resume()
             }
         }
     }

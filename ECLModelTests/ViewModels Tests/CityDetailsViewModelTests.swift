@@ -18,7 +18,7 @@ class CityDetailsViewModelTests: XCTestCase {
         sut.delegate = mockDelegate
         super.setUp()
     }
-
+    
     override func tearDown() {
         dataCreatingMock = nil
         mockedModel = nil
@@ -59,7 +59,7 @@ class CityDetailsViewModelTests: XCTestCase {
             exp.fulfill()
         }
         sut.fetchAllDetails()
-
+        
         waitForExpectations()
     }
     
@@ -107,6 +107,42 @@ class CityDetailsViewModelTests: XCTestCase {
         
         sut.fetchAllDetails()
         
+        waitForExpectations()
+    }
+    
+    func testShouldAddTofavorite_WhenAdded() {
+        let exp = expectation()
+        
+        dataCreatingMock.mock_visitorsDataTaskCompletion = { completion in
+            completion(.success(self.mockVisitors))
+            return TaskMock()
+        }
+        dataCreatingMock.mock_rateDataTaskCompletion = { completion in
+            completion(.success(self.mockRate))
+            self.sut.addToFavorite()
+            XCTAssertEqual(self.mockedModel.favorites.map{$0}, [2])
+            exp.fulfill()
+            return TaskMock()
+        }
+        sut.fetchAllDetails()
+        waitForExpectations()
+    }
+    
+    func testShouldRemoveTofavorite_WhenRemove() {
+        mockPersisting.setFavorite(favArray: [1,2,3])
+        let exp = expectation()
+        dataCreatingMock.mock_visitorsDataTaskCompletion = { completion in
+            completion(.success(self.mockVisitors))
+            return TaskMock()
+        }
+        dataCreatingMock.mock_rateDataTaskCompletion = { completion in
+            completion(.success(self.mockRate))
+            self.sut.removeFromFavorite()
+            XCTAssertEqual(self.mockedModel.favorites.map{$0}, [1,3])
+            exp.fulfill()
+            return TaskMock()
+        }
+        sut.fetchAllDetails()
         waitForExpectations()
     }
 }
