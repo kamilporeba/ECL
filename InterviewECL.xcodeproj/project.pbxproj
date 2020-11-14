@@ -47,6 +47,14 @@
 		8E497BD9255C8C1800A79AE9 /* Visitors+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BD8255C8C1800A79AE9 /* Visitors+Sample.swift */; };
 		8E497BDB255C8C3C00A79AE9 /* Rate+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BDA255C8C3C00A79AE9 /* Rate+Sample.swift */; };
 		8E497BDD255C8DA900A79AE9 /* XCTestCase+expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BDC255C8DA900A79AE9 /* XCTestCase+expectation.swift */; };
+		8E497BE1255D640300A79AE9 /* CityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BE0255D640300A79AE9 /* CityListViewModel.swift */; };
+		8E497BE3255D661900A79AE9 /* CityCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BE2255D661900A79AE9 /* CityCellViewModel.swift */; };
+		8E497BE5255D6E2D00A79AE9 /* CityDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BE4255D6E2D00A79AE9 /* CityDetailsViewModel.swift */; };
+		8E497BE9255EEE3700A79AE9 /* CityListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BE8255EEE3700A79AE9 /* CityListViewModelTests.swift */; };
+		8E497BEB255EFA0F00A79AE9 /* CityDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BEA255EFA0E00A79AE9 /* CityDetailsViewModelTests.swift */; };
+		8E497BED255F022800A79AE9 /* Persisting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BEC255F022800A79AE9 /* Persisting.swift */; };
+		8E497BF4255F032000A79AE9 /* PersistingMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BF3255F032000A79AE9 /* PersistingMocks.swift */; };
+		8E497BF6255F077600A79AE9 /* Persisting+Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497BF5255F077600A79AE9 /* Persisting+Favorite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +141,14 @@
 		8E497BD8255C8C1800A79AE9 /* Visitors+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Visitors+Sample.swift"; sourceTree = "<group>"; };
 		8E497BDA255C8C3C00A79AE9 /* Rate+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rate+Sample.swift"; sourceTree = "<group>"; };
 		8E497BDC255C8DA900A79AE9 /* XCTestCase+expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+expectation.swift"; sourceTree = "<group>"; };
+		8E497BE0255D640300A79AE9 /* CityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewModel.swift; sourceTree = "<group>"; };
+		8E497BE2255D661900A79AE9 /* CityCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCellViewModel.swift; sourceTree = "<group>"; };
+		8E497BE4255D6E2D00A79AE9 /* CityDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewModel.swift; sourceTree = "<group>"; };
+		8E497BE8255EEE3700A79AE9 /* CityListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewModelTests.swift; sourceTree = "<group>"; };
+		8E497BEA255EFA0E00A79AE9 /* CityDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		8E497BEC255F022800A79AE9 /* Persisting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persisting.swift; sourceTree = "<group>"; };
+		8E497BF3255F032000A79AE9 /* PersistingMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistingMocks.swift; sourceTree = "<group>"; };
+		8E497BF5255F077600A79AE9 /* Persisting+Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Persisting+Favorite.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +233,7 @@
 		8E497B78255C239F00A79AE9 /* ECLModel */ = {
 			isa = PBXGroup;
 			children = (
+				8E497BDF255C9A9400A79AE9 /* ViewModels */,
 				8E497BB1255C384700A79AE9 /* Networking */,
 				8E497BAE255C2BD800A79AE9 /* Models */,
 				8E497B95255C25B300A79AE9 /* DTO */,
@@ -224,6 +241,8 @@
 				8E497B7A255C239F00A79AE9 /* Info.plist */,
 				8E497BD0255C7D1500A79AE9 /* AtomicProperty.swift */,
 				8E497BD4255C82DA00A79AE9 /* ImageFetcher.swift */,
+				8E497BEC255F022800A79AE9 /* Persisting.swift */,
+				8E497BF5255F077600A79AE9 /* Persisting+Favorite.swift */,
 			);
 			path = ECLModel;
 			sourceTree = "<group>";
@@ -231,7 +250,7 @@
 		8E497B85255C239F00A79AE9 /* ECLModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				8E497BDE255C991500A79AE9 /* ViewModels */,
+				8E497BDE255C991500A79AE9 /* ViewModels Tests */,
 				8E497BCB255C62CE00A79AE9 /* Model Tests */,
 				8E497BC1255C5C9000A79AE9 /* Mocks */,
 				8E497BBA255C4F2400A79AE9 /* Networking */,
@@ -311,6 +330,7 @@
 				8E497BC2255C5CA400A79AE9 /* ECLDataTaskCreatingMock.swift */,
 				8E497BC4255C5EC600A79AE9 /* TaskMock.swift */,
 				8E497BCE255C637200A79AE9 /* CityListModelListenerMock.swift */,
+				8E497BF3255F032000A79AE9 /* PersistingMocks.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -333,9 +353,21 @@
 			path = "Model Tests";
 			sourceTree = "<group>";
 		};
-		8E497BDE255C991500A79AE9 /* ViewModels */ = {
+		8E497BDE255C991500A79AE9 /* ViewModels Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8E497BE8255EEE3700A79AE9 /* CityListViewModelTests.swift */,
+				8E497BEA255EFA0E00A79AE9 /* CityDetailsViewModelTests.swift */,
+			);
+			path = "ViewModels Tests";
+			sourceTree = "<group>";
+		};
+		8E497BDF255C9A9400A79AE9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8E497BE0255D640300A79AE9 /* CityListViewModel.swift */,
+				8E497BE2255D661900A79AE9 /* CityCellViewModel.swift */,
+				8E497BE4255D6E2D00A79AE9 /* CityDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -534,9 +566,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E497BE5255D6E2D00A79AE9 /* CityDetailsViewModel.swift in Sources */,
+				8E497BED255F022800A79AE9 /* Persisting.swift in Sources */,
 				8E497BB0255C2C0400A79AE9 /* CityListModel.swift in Sources */,
+				8E497BE1255D640300A79AE9 /* CityListViewModel.swift in Sources */,
 				8E497BAB255C298A00A79AE9 /* Rate.swift in Sources */,
 				8E497BD3255C7F8B00A79AE9 /* ModelError.swift in Sources */,
+				8E497BE3255D661900A79AE9 /* CityCellViewModel.swift in Sources */,
 				8E497BC0255C5A1800A79AE9 /* URLSession+ECLTaskCreating.swift in Sources */,
 				8E497BC8255C605600A79AE9 /* VisitorsTaskCreating.swift in Sources */,
 				8E497BB5255C444F00A79AE9 /* RestDataTaskCreating.swift in Sources */,
@@ -547,6 +583,7 @@
 				8E497BCA255C60C300A79AE9 /* RateDataTaskCreating.swift in Sources */,
 				8E497B97255C25C400A79AE9 /* CityListDTO.swift in Sources */,
 				8E497BB9255C4E8600A79AE9 /* URL+API.swift in Sources */,
+				8E497BF6255F077600A79AE9 /* Persisting+Favorite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +594,9 @@
 				8E497BC3255C5CA400A79AE9 /* ECLDataTaskCreatingMock.swift in Sources */,
 				8E497BDB255C8C3C00A79AE9 /* Rate+Sample.swift in Sources */,
 				8E497BD9255C8C1800A79AE9 /* Visitors+Sample.swift in Sources */,
+				8E497BE9255EEE3700A79AE9 /* CityListViewModelTests.swift in Sources */,
+				8E497BEB255EFA0F00A79AE9 /* CityDetailsViewModelTests.swift in Sources */,
+				8E497BF4255F032000A79AE9 /* PersistingMocks.swift in Sources */,
 				8E497BCD255C62DE00A79AE9 /* CityListModelTests.swift in Sources */,
 				8E497BCF255C637200A79AE9 /* CityListModelListenerMock.swift in Sources */,
 				8E497BA5255C264300A79AE9 /* CityListDTO+Sample.swift in Sources */,

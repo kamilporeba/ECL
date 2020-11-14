@@ -24,9 +24,11 @@ class CityListModel: CityListModelProtocol {
     
     private let dataTaskCreating: ECLTaskCreating
     private let imageFetcher: ImageFetchable = ImageFetcher()
+    private let persisting: Persisting
     
-    init(dataTaskCreating: ECLTaskCreating) {
+    init(dataTaskCreating: ECLTaskCreating, persisting: Persisting) {
         self.dataTaskCreating = dataTaskCreating
+        self.persisting = persisting
     }
     
     @Atomic private var cityList: CityList? {
@@ -64,6 +66,15 @@ class CityListModel: CityListModelProtocol {
             if let modelError = error {
                  listeners.forEach { $0()?.didErrorOccure(error: modelError)}
             }
+        }
+    }
+    
+    public var favorites: [Int] {
+        get {
+            guard let favoritesArray = persisting.retrieveFavorite() else {
+                return [Int]()
+            }
+            return favoritesArray
         }
     }
     
@@ -125,6 +136,26 @@ class CityListModel: CityListModelProtocol {
                     self?.listeners.forEach { $0()?.didFetchImage(base64Image: base64Image, of: cityId)}
                 }
             }
+        }
+    }
+    
+    func addToFavorite(cityId: Int) {
+        if let favoriteArray = persisting.retrieveFavorite() {
+            var newFavorite = favoriteArray
+            newFavorite.append(cityId)
+            persisting.setFavorite(favArray: newFavorite)
+        } else {
+            persisting.setFavorite(favArray: [cityId])
+        }
+    }
+    
+    func removeFromFavorite(cityId: Int) {
+        if let favoriteArray = persisting.retrieveFavorite() {
+            var newFavorite = favoriteArray
+            newFavorite.removeAll(where: {$0 == cityId})
+            persisting.setFavorite(favArray: newFavorite)
+        } else {
+            return
         }
     }
 }

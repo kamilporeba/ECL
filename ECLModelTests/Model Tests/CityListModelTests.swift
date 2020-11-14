@@ -9,9 +9,10 @@ class CityListModelTests: XCTestCase {
     let mockCityList = CityList.test_sampleCityList()
     let mockVisitor = Visitors.test_sampleVisitors()
     let mockRate = Rate.test_sampleRate()
+    let mockPersisting = PersistingMock()
     
     override func setUp() {
-        sut = CityListModel(dataTaskCreating: dataCreatingMock)
+        sut = CityListModel(dataTaskCreating: dataCreatingMock, persisting: mockPersisting)
         listenerMock = CityListModelListenerMock()
         sut.addListener(listener: listenerMock)
     }
@@ -277,4 +278,40 @@ class CityListModelTests: XCTestCase {
         waitForExpectations()
     }
     
+    func testShouldAddCity_whenArrayFavoriteEmpty() {
+        sut.addToFavorite(cityId: 1)
+        
+        let favorite = mockPersisting.retrieveFavorite()
+        XCTAssertNotNil(favorite)
+        XCTAssertEqual(favorite?.first, 1)
+    }
+    
+    func testShouldAddCity_whenArrayFavoriteNotEmpty() {
+        mockPersisting.setFavorite(favArray: [1,2,3])
+        
+        sut.addToFavorite(cityId: 7)
+        
+        let favorite = mockPersisting.retrieveFavorite()
+        XCTAssertNotNil(favorite)
+        XCTAssertEqual(favorite?.first, 1)
+        XCTAssertEqual(favorite?.last, 7)
+    }
+    
+    func testShouldRemoveFav_WhenFavNotEmpty() {
+         mockPersisting.setFavorite(favArray: [1,2,3])
+        
+        sut.removeFromFavorite(cityId: 2)
+        let favorite = mockPersisting.retrieveFavorite()
+        XCTAssertEqual(favorite, [1,3])
+    }
+    
+    func testShouldReturnFavorite_WhenSet() {
+        mockPersisting.setFavorite(favArray: [1,2,3])
+    
+        XCTAssertEqual(sut.favorites, [1,2,3])
+    }
+    
+    func testShouldReturnEmptyFavorite_WhenNotSet() {
+        XCTAssertEqual(sut.favorites, [])
+    }
 }
