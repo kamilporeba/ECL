@@ -78,7 +78,11 @@ extension CityListViewController: CityListViewModelDelegate {
     }
     
     func didErrorOccured(message: String) {
-        print(message)
+        if let navVC = navigationController as? ECLNavigationVC {
+            navVC.navigateToError(with: message, refreshAction: { [weak self] in
+                self?.cityListViewModel.fetchList()
+            })
+        }
     }
 }
 

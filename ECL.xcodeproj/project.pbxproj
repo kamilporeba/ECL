@@ -65,6 +65,7 @@
 		8E845C2625604FF7008BBE86 /* VisitorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E845C2525604FF7008BBE86 /* VisitorsTableViewController.swift */; };
 		8E845C282561310F008BBE86 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E845C272561310F008BBE86 /* Localizable.strings */; };
 		8E845C2A2561313A008BBE86 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E845C292561313A008BBE86 /* String+Localizable.swift */; };
+		8E845C2D25613B33008BBE86 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E845C2C25613B33008BBE86 /* ErrorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +170,7 @@
 		8E845C2525604FF7008BBE86 /* VisitorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorsTableViewController.swift; sourceTree = "<group>"; };
 		8E845C272561310F008BBE86 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8E845C292561313A008BBE86 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		8E845C2C25613B33008BBE86 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 		8E497B4F255C238D00A79AE9 /* ECL */ = {
 			isa = PBXGroup;
 			children = (
+				8E845C2B25613B17008BBE86 /* ErrorView */,
 				8E845C202560386B008BBE86 /* City details */,
 				8E497BFD255FDBF700A79AE9 /* City list */,
 				8E497B50255C238D00A79AE9 /* AppDelegate.swift */,
@@ -418,6 +421,14 @@
 			path = "City details";
 			sourceTree = "<group>";
 		};
+		8E845C2B25613B17008BBE86 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				8E845C2C25613B33008BBE86 /* ErrorViewController.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -599,6 +610,7 @@
 				8E845C1F255FF835008BBE86 /* CityListViewController+Delegate.swift in Sources */,
 				8E497BF8255FD84C00A79AE9 /* ECLNavigationVC.swift in Sources */,
 				8E845C2625604FF7008BBE86 /* VisitorsTableViewController.swift in Sources */,
+				8E845C2D25613B33008BBE86 /* ErrorViewController.swift in Sources */,
 				8E497B51255C238D00A79AE9 /* AppDelegate.swift in Sources */,
 				8E845C222560388A008BBE86 /* CityDetailsViewController.swift in Sources */,
 				8E845C1D255FF34A008BBE86 /* CityTableViewCell.swift in Sources */,

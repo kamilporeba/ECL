@@ -1,11 +1,3 @@
-//
-//  SceneDelegate.swift
-//  InterviewECL
-//
-//  Created by Kamil on 11/11/2020.
-//  Copyright © 2020 Kamil. All rights reserved.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

@@ -1,11 +1,3 @@
-//
-//  InterviewECLTests.swift
-//  InterviewECLTests
-//
-//  Created by Kamil on 11/11/2020.
-//  Copyright © 2020 Kamil. All rights reserved.
-//
-
 import XCTest
 @testable import InterviewECL
 

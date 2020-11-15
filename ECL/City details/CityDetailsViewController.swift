@@ -78,7 +78,11 @@ class CityDetailsViewController: UIViewController {
 
 extension CityDetailsViewController: CityDetailsViewModelDelegate {
     func didErrorOccured(errorMessage: String) {
-        print(errorMessage)
+        if let navVC = navigationController as? ECLNavigationVC {
+            navVC.navigateToError(with: errorMessage, refreshAction: { [weak self] in
+                self?.cityDetailsViewModel.fetchAllDetails()
+            })
+        }
     }
     
     func didFetchDetails(visitors: [String], rate: Float) {

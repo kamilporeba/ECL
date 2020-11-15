@@ -13,4 +13,9 @@ class ECLNavigationVC: UINavigationController {
     func navigateToVisitors(with list:[String]) {
         present(VisitorsTableViewController(with: list), animated: true, completion: nil)
     }
+    
+    func navigateToError(with message: String, refreshAction: (()->())?) {
+        let errorVC = ErrorViewController(with: message, refreshAction: refreshAction)
+        present(errorVC, animated: true, completion: nil)
+    }
 }
