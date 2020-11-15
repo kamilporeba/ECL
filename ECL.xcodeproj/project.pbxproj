@@ -11,7 +11,6 @@
 		8E497B53255C238D00A79AE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497B52255C238D00A79AE9 /* SceneDelegate.swift */; };
 		8E497B5A255C238E00A79AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E497B59255C238E00A79AE9 /* Assets.xcassets */; };
 		8E497B5D255C238E00A79AE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E497B5B255C238E00A79AE9 /* LaunchScreen.storyboard */; };
-		8E497B68255C238E00A79AE9 /* InterviewECLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E497B67255C238E00A79AE9 /* InterviewECLTests.swift */; };
 		8E497B80255C239F00A79AE9 /* ECLModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E497B77255C239F00A79AE9 /* ECLModel.framework */; };
 		8E497B89255C239F00A79AE9 /* ECLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E497B79255C239F00A79AE9 /* ECLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E497B8C255C239F00A79AE9 /* ECLModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E497B77255C239F00A79AE9 /* ECLModel.framework */; };
@@ -69,13 +68,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8E497B64255C238E00A79AE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8E497B45255C238D00A79AE9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8E497B4C255C238D00A79AE9;
-			remoteInfo = InterviewECL;
-		};
 		8E497B81255C239F00A79AE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8E497B45255C238D00A79AE9 /* Project object */;
@@ -113,9 +105,6 @@
 		8E497B59255C238E00A79AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E497B5C255C238E00A79AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E497B5E255C238E00A79AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E497B63255C238E00A79AE9 /* ECLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E497B67255C238E00A79AE9 /* InterviewECLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewECLTests.swift; sourceTree = "<group>"; };
-		8E497B69255C238E00A79AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E497B77255C239F00A79AE9 /* ECLModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECLModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E497B79255C239F00A79AE9 /* ECLModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECLModel.h; sourceTree = "<group>"; };
 		8E497B7A255C239F00A79AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,13 +171,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E497B60255C238E00A79AE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8E497B74255C239F00A79AE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				8E497B4F255C238D00A79AE9 /* ECL */,
-				8E497B66255C238E00A79AE9 /* InterviewECLTests */,
 				8E497B78255C239F00A79AE9 /* ECLModel */,
 				8E497B85255C239F00A79AE9 /* ECLModelTests */,
 				8E497B4E255C238D00A79AE9 /* Products */,
@@ -222,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				8E497B4D255C238D00A79AE9 /* ECL.app */,
-				8E497B63255C238E00A79AE9 /* ECLTests.xctest */,
 				8E497B77255C239F00A79AE9 /* ECLModel.framework */,
 				8E497B7F255C239F00A79AE9 /* ECLModelTests.xctest */,
 			);
@@ -247,15 +227,6 @@
 				8E845C292561313A008BBE86 /* String+Localizable.swift */,
 			);
 			path = ECL;
-			sourceTree = "<group>";
-		};
-		8E497B66255C238E00A79AE9 /* InterviewECLTests */ = {
-			isa = PBXGroup;
-			children = (
-				8E497B67255C238E00A79AE9 /* InterviewECLTests.swift */,
-				8E497B69255C238E00A79AE9 /* Info.plist */,
-			);
-			path = InterviewECLTests;
 			sourceTree = "<group>";
 		};
 		8E497B78255C239F00A79AE9 /* ECLModel */ = {
@@ -462,24 +433,6 @@
 			productReference = 8E497B4D255C238D00A79AE9 /* ECL.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8E497B62255C238E00A79AE9 /* ECLTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8E497B6F255C238E00A79AE9 /* Build configuration list for PBXNativeTarget "ECLTests" */;
-			buildPhases = (
-				8E497B5F255C238E00A79AE9 /* Sources */,
-				8E497B60255C238E00A79AE9 /* Frameworks */,
-				8E497B61255C238E00A79AE9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8E497B65255C238E00A79AE9 /* PBXTargetDependency */,
-			);
-			name = ECLTests;
-			productName = InterviewECLTests;
-			productReference = 8E497B63255C238E00A79AE9 /* ECLTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		8E497B76255C239F00A79AE9 /* ECLModel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E497B8E255C239F00A79AE9 /* Build configuration list for PBXNativeTarget "ECLModel" */;
@@ -529,10 +482,6 @@
 					8E497B4C255C238D00A79AE9 = {
 						CreatedOnToolsVersion = 11.7;
 					};
-					8E497B62255C238E00A79AE9 = {
-						CreatedOnToolsVersion = 11.7;
-						TestTargetID = 8E497B4C255C238D00A79AE9;
-					};
 					8E497B76255C239F00A79AE9 = {
 						CreatedOnToolsVersion = 11.7;
 						LastSwiftMigration = 1170;
@@ -556,7 +505,6 @@
 			projectRoot = "";
 			targets = (
 				8E497B4C255C238D00A79AE9 /* ECL */,
-				8E497B62255C238E00A79AE9 /* ECLTests */,
 				8E497B76255C239F00A79AE9 /* ECLModel */,
 				8E497B7E255C239F00A79AE9 /* ECLModelTests */,
 			);
@@ -571,13 +519,6 @@
 				8E497B5D255C238E00A79AE9 /* LaunchScreen.storyboard in Resources */,
 				8E845C282561310F008BBE86 /* Localizable.strings in Resources */,
 				8E497B5A255C238E00A79AE9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E497B61255C238E00A79AE9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,14 +557,6 @@
 				8E845C1D255FF34A008BBE86 /* CityTableViewCell.swift in Sources */,
 				8E497BFA255FD92D00A79AE9 /* CityListViewController.swift in Sources */,
 				8E497B53255C238D00A79AE9 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E497B5F255C238E00A79AE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E497B68255C238E00A79AE9 /* InterviewECLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,11 +614,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8E497B65255C238E00A79AE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8E497B4C255C238D00A79AE9 /* ECL */;
-			targetProxy = 8E497B64255C238E00A79AE9 /* PBXContainerItemProxy */;
-		};
 		8E497B82255C239F00A79AE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8E497B76255C239F00A79AE9 /* ECLModel */;
@@ -862,50 +790,6 @@
 			};
 			name = Release;
 		};
-		8E497B70255C238E00A79AE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XY8ZXPE8XE;
-				INFOPLIST_FILE = InterviewECLTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kamil.poreba.InterviewECLTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECL.app/ECL";
-			};
-			name = Debug;
-		};
-		8E497B71255C238E00A79AE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XY8ZXPE8XE;
-				INFOPLIST_FILE = InterviewECLTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kamil.poreba.InterviewECLTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECL.app/ECL";
-			};
-			name = Release;
-		};
 		8E497B8F255C239F00A79AE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1020,15 +904,6 @@
 			buildConfigurations = (
 				8E497B6D255C238E00A79AE9 /* Debug */,
 				8E497B6E255C238E00A79AE9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8E497B6F255C238E00A79AE9 /* Build configuration list for PBXNativeTarget "ECLTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8E497B70255C238E00A79AE9 /* Debug */,
-				8E497B71255C238E00A79AE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
