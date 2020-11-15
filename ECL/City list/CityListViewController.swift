@@ -6,7 +6,7 @@ class CityListViewController: UIViewController {
     @Atomic var cityList: [CityCellViewModel]
     
     let tableView = UITableView()
-    lazy var favoriteFilter = UIBarButtonItem(title: "Favorties", style: .plain, target: self, action:  #selector(favoriteTapped))
+    lazy var favoriteFilter = UIBarButtonItem(title: "city_list_Favorites_filter_button".localized, style: .plain, target: self, action:  #selector(favoriteTapped))
     var isFavoritesPresented: Bool = false
     
     init(with viewModel: CityListViewModel) {
@@ -44,11 +44,11 @@ class CityListViewController: UIViewController {
     
     @objc func favoriteTapped(sender: AnyObject) {
         if isFavoritesPresented {
-            favoriteFilter.title = "Favorties"
+            favoriteFilter.title = "city_list_Favorites_filter_button".localized
             cityList = cityListViewModel.cityCell
             isFavoritesPresented = false
         } else {
-            favoriteFilter.title = "ALL"
+            favoriteFilter.title = "city_list_all_filter_button".localized
             cityList = cityListViewModel.favorites
             isFavoritesPresented = true
         }

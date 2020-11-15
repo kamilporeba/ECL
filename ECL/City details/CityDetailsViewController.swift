@@ -13,13 +13,14 @@ class CityDetailsViewController: UIViewController {
     private let cityImage: UIImage
     private let cityName: String
     private var visitorList: [String] = [String]()
-    lazy var addToFav = UIBarButtonItem(title: cityDetailsViewModel.isFavorite ? "Remove from fav": "Add to fav", style: .plain, target: self, action:  #selector(favoriteTapped))
+    lazy var addToFav = UIBarButtonItem(title: cityDetailsViewModel.isFavorite ? "details_vc_remove_from_fav".localized : "details_vc_add_to_fav".localized, style: .plain, target: self, action:  #selector(favoriteTapped))
     
     init(with viewModel: CityDetailsViewModel, name: String, image: UIImage) {
         self.cityDetailsViewModel = viewModel
         self.cityImage = image
         self.cityName = name
         super.init(nibName: nil, bundle: nil)
+        title = cityName
         cityDetailsViewModel.delegate = self
     }
     
@@ -53,7 +54,7 @@ class CityDetailsViewController: UIViewController {
         rateLabel.font = UIFont.preferredFont(forTextStyle: .body)
         cityimageView.contentMode = .scaleAspectFit
         visitorsButton.setTitleColor(.blue, for: .normal)
-        visitorsButton.setTitle("See visitors", for: .normal)
+        visitorsButton.setTitle("details_see_visitors_button_title".localized, for: .normal)
         visitorsButton.addTarget(self, action: #selector(visitors), for: .touchUpInside)
         
     }
@@ -66,10 +67,10 @@ class CityDetailsViewController: UIViewController {
     
     @objc func favoriteTapped(sender: AnyObject) {
         if cityDetailsViewModel.isFavorite  {
-            addToFav.title = "Add to fav"
+            addToFav.title = "details_vc_add_to_fav".localized
             cityDetailsViewModel.removeFromFavorite()
         } else {
-            addToFav.title = "Remove from fav"
+            addToFav.title = "details_vc_remove_from_fav".localized
             cityDetailsViewModel.addToFavorite()
         }
     }
@@ -81,8 +82,8 @@ extension CityDetailsViewController: CityDetailsViewModelDelegate {
     }
     
     func didFetchDetails(visitors: [String], rate: Float) {
-        rateLabel.text = "Rating: \(rate)"
-        visitorsNumber.text = "Visitors number: \(visitors.count)"
+        rateLabel.text = "\("details_visitors_rating".localized) \(rate)"
+        visitorsNumber.text = "\("datails_visitors_countTitle".localized) \(visitors.count)"
         visitorList = visitors
     }
 }

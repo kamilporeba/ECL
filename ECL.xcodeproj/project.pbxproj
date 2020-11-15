@@ -63,6 +63,8 @@
 		8E845C222560388A008BBE86 /* CityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E845C212560388A008BBE86 /* CityDetailsViewController.swift */; };
 		8E845C24256047E1008BBE86 /* UIImage+Base64Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E845C23256047E1008BBE86 /* UIImage+Base64Init.swift */; };
 		8E845C2625604FF7008BBE86 /* VisitorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E845C2525604FF7008BBE86 /* VisitorsTableViewController.swift */; };
+		8E845C282561310F008BBE86 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E845C272561310F008BBE86 /* Localizable.strings */; };
+		8E845C2A2561313A008BBE86 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E845C292561313A008BBE86 /* String+Localizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +167,8 @@
 		8E845C212560388A008BBE86 /* CityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewController.swift; sourceTree = "<group>"; };
 		8E845C23256047E1008BBE86 /* UIImage+Base64Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Base64Init.swift"; sourceTree = "<group>"; };
 		8E845C2525604FF7008BBE86 /* VisitorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorsTableViewController.swift; sourceTree = "<group>"; };
+		8E845C272561310F008BBE86 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8E845C292561313A008BBE86 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +240,8 @@
 				8E497BF7255FD84C00A79AE9 /* ECLNavigationVC.swift */,
 				8E845C23256047E1008BBE86 /* UIImage+Base64Init.swift */,
 				8E845C2525604FF7008BBE86 /* VisitorsTableViewController.swift */,
+				8E845C272561310F008BBE86 /* Localizable.strings */,
+				8E845C292561313A008BBE86 /* String+Localizable.swift */,
 			);
 			path = ECL;
 			sourceTree = "<group>";
@@ -552,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E497B5D255C238E00A79AE9 /* LaunchScreen.storyboard in Resources */,
+				8E845C282561310F008BBE86 /* Localizable.strings in Resources */,
 				8E497B5A255C238E00A79AE9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E845C24256047E1008BBE86 /* UIImage+Base64Init.swift in Sources */,
+				8E845C2A2561313A008BBE86 /* String+Localizable.swift in Sources */,
 				8E845C1F255FF835008BBE86 /* CityListViewController+Delegate.swift in Sources */,
 				8E497BF8255FD84C00A79AE9 /* ECLNavigationVC.swift in Sources */,
 				8E845C2625604FF7008BBE86 /* VisitorsTableViewController.swift in Sources */,
