@@ -142,6 +142,7 @@ class CityListModel: CityListModelProtocol {
     func addToFavorite(cityId: Int) {
         if let favoriteArray = persisting.retrieveFavorite() {
             var newFavorite = favoriteArray
+            guard !newFavorite.contains(cityId) else { return }
             newFavorite.append(cityId)
             persisting.setFavorite(favArray: newFavorite)
         } else {

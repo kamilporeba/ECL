@@ -298,7 +298,7 @@ class CityListModelTests: XCTestCase {
     }
     
     func testShouldRemoveFav_WhenFavNotEmpty() {
-         mockPersisting.setFavorite(favArray: [1,2,3])
+        mockPersisting.setFavorite(favArray: [1,2,3])
         
         sut.removeFromFavorite(cityId: 2)
         let favorite = mockPersisting.retrieveFavorite()
@@ -307,11 +307,19 @@ class CityListModelTests: XCTestCase {
     
     func testShouldReturnFavorite_WhenSet() {
         mockPersisting.setFavorite(favArray: [1,2,3])
-    
+        
         XCTAssertEqual(sut.favorites, [1,2,3])
     }
     
     func testShouldReturnEmptyFavorite_WhenNotSet() {
         XCTAssertEqual(sut.favorites, [])
+    }
+    
+    func testShouldNotAddValue_WhenExsit() {
+        mockPersisting.setFavorite(favArray: [1,2,3])
+        sut.addToFavorite(cityId: 2)
+        
+        XCTAssertEqual(sut.favorites, [1,2,3])
+        
     }
 }
